@@ -22,10 +22,11 @@ body {
 	background-repeat: no-repeat;
 	/*background-position: fixed;*/
 	background-size: cover;
+	/*referenced stackoverflow for -webkit tools*/
 	-webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	
 	
 	
