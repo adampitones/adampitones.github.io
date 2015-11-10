@@ -22,7 +22,7 @@ body {
 	background-repeat: no-repeat;
 	/*background-position: fixed;*/
 	background-size: cover;
-	/*referenced stackoverflow for -webkit tools*/
+	/*referenced stackoverflow for -webkit tools* ---deyana/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
