@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>StudyLife</title>
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	  <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>  
+	  </head>
+	  
+	  <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+	<body ng-app="myApp" ng-controller="userCtrl">
+
+		    <!-- Fixed navbar -->	
+	<nav class="navbar navbar-inverse navbar-fixed-top header">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">StudyLife</a>
+		</div>
+		<div>
+		  <ul class="nav navbar-nav">
+			<li><a href="#">Home</a></li>
+			<li class="active"><a href="#">Courses</a></li>
+			<li><a href="#">Page 3</a></li>
+			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 4 <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Page 1-1</a></li>
+				<li><a href="#">Page 1-2</a></li>
+				<li><a href="#">Page 1-3</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<div class="container">
+	
+	 <!--Search Bar---> 
+	<div class="row">
+		<div class="col-lg-5" style="float:right;">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Task...">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="button">Search</button>
+			  </span>
+			</div><!-- /input-group -->
+		</div><!-- /.col-lg-6 -->
+	</div><!-- /.row -->
+	
+	<br>
+	
+	
+		  <div class="col-md-9" >
+		<ul class="nav nav-tabs" role="tablist">
+		  <li role="presentation" class="active"><a href="#">Tasks</a></li>
+		  <li role="presentation"><a href="#">Notes</a></li>
+		  <li role="presentation"><a href="#">Messages <span class="badge">5</span></a></li>
+		</ul>
+	</div>
+	
+		<div class="col-md-3" >
+		  <ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="#">Courses Currently Taking</a></li>
+			<li><a href="#">CSCE 444</a></li>
+			<li><a href="#">ANTH 210</a></li>
+			<li><a href="#">ENG 110</a></li>
+		  </ul>
+		</div>
+		
+	<br>
+	  
+	   <!-- Table -->         
+	  <table class="table table-hover">
+		<thead>
+		  <tr>
+			<th>#</th>
+			<th>Task:</th>
+			<th>Due Date</th>
+			<th>Complete</th>
+			<th>In Progress</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>1</td>
+			<td>Review Paper</td>
+			<td>Oct. 30</td>
+			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
+			<td><label class="radio"><input type="radio" name="optradio"></label></td>
+		  </tr>
+		  <tr>
+			<td>2</td>
+			<td>Mock Up</td>
+			<td>Nov. 2</td>
+			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
+			<td><label class="radio"><input type="radio" name="optradio"></label></td>
+		  </tr>
+		  <tr>
+			<td>3</td>
+			<td>Final Draft</td>
+			<td>Dec. 8</td>
+			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
+			<td><label class="radio"><input type="radio" name="optradio"></label></td>
+		  </tr>
+		</tbody>
+	  </table>
+	  
+	<hr>  
+	  
+	  
+	  <button class="btn btn-success" ng-click="editUser('new')">
+	  <span class="glyphicon glyphicon-tasks"></span> Create New Task
+	</button>
+	
+	<hr>
+	
+	<h3 ng-show="edit">Create New Task:</h3>
+	
+	<form class="form-horizontal">
+	<div class="form-group">
+	  <label class="col-sm-2 control-label">Task:</label>
+	  <div class="col-sm-10">
+		<input type="text" ng-model="taskName" ng-disabled="!edit" placeholder="First Name">
+	  </div>
+	</div> 
+	<div class="form-group">
+	  <label class="col-sm-2 control-label">Due Date:</label>
+	  <div class="col-sm-10">
+		<input type="text" ng-model="dueDate" ng-disabled="!edit" placeholder="Last Name">
+	  </div>
+	</div>
+	</form>
+	
+	<hr>
+	<button class="btn btn-success" ng-disabled="error || incomplete">
+	<span class="glyphicon glyphicon-save"></span>  Save Changes
+	</button>
+
+	<script src= "myUsers.js"></script>
+
+	
+	
+	
+	</div>
+
+	</body>
+</html>
