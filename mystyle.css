@@ -17,7 +17,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	background: transparent;
 }
 body {
-	background:  /*#DCDDDF url(http://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);*/
+	background-image: url("notebook.jpg");
+	/*background:  #DCDDDF url(http://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);*/
 	color:#F5F3EE;  /*#000;*/
 	font: 14px Arial;
 	margin: 0 auto;
