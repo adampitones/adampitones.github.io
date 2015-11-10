@@ -17,8 +17,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	background: transparent;
 }
 body {
-	background: black; /*#DCDDDF url(http://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);*/
-	color: #000;
+	background:  /*#DCDDDF url(http://cssdeck.com/uploads/media/items/7/7AF2Qzt.png);*/
+	color: black; /*#000;*/
 	font: 14px Arial;
 	margin: 0 auto;
 	padding: 0;
