@@ -92,8 +92,8 @@
 			<td>{{ $index + 1 }}</td>
 			<td>{{task.taskName}}</td>
 			<td>{{task.dueDate}}</td>
-			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
-			<td><label class="radio"><input type="radio" name="optradio"></label></td>
+			<td><label class="radio"><input type="radio" name="{{$index + 1}}"></label></td>
+			<td><label class="radio"><input type="radio" name="{{$index + 1}}"></label></td>
 		  </tr>
 		</tbody>
 	  </table>
