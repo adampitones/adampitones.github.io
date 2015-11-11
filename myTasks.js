@@ -4,7 +4,7 @@ $scope.dueDate = '';
 $scope.tasks = [
 {id:1, taskName:'Review Paper', dueDate:"Oct.30" },
 {id:2, taskName:'Mock Up',  dueDate:"Nov.2" },
-{id:3, taskName:'Final Draft',dueDate:"Dec.8" }
+{id:3, taskName:'Rough Draft',dueDate:"Nov.30" }
 ];
 $scope.edit = true;
 $scope.error = false;
