@@ -72,6 +72,11 @@ form:after {
 	clear: both;
 	visibility: hidden;
 }
+
+section{
+	top:40vh;
+}
+
 .container { margin: 25px auto; position: relative; width: 900px; vertical-align: 30%; }
 #content {
 	background: #f9f9f9;
