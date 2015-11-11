@@ -88,40 +88,25 @@
 		  </tr>
 		</thead>
 		<tbody>
-		  <tr>
-			<td>1</td>
-			<td>Review Paper</td>
-			<td>Oct. 30</td>
-			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
-			<td><label class="radio"><input type="radio" name="optradio"></label></td>
-		  </tr>
-		  <tr>
-			<td>2</td>
-			<td>Mock Up</td>
-			<td>Nov. 2</td>
-			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
-			<td><label class="radio"><input type="radio" name="optradio"></label></td>
-		  </tr>
-		  <tr>
-			<td>3</td>
-			<td>Final Draft</td>
-			<td>Dec. 8</td>
+		  <tr ng-repeat="task in tasks">
+			<td>{{ $index + 1 }}</td>
+			<td>{{task.taskName}}</td>
+			<td>{{task.dueDate}}</td>
 			<td><label class="checkbox"><input type="checkbox" value=""></label></td>
 			<td><label class="radio"><input type="radio" name="optradio"></label></td>
 		  </tr>
 		</tbody>
 	  </table>
 	  
-	<hr>  
 	  
-	  
-	  <button class="btn btn-success" ng-click="editUser('new')">
+	<!--  <button class="btn btn-success" ng-click="editUser('new')">
 	  <span class="glyphicon glyphicon-tasks"></span> Create New Task
-	</button>
+	</button> -->
 	
 	<hr>
 	
 	<h3 ng-show="edit">Create New Task:</h3>
+	<h3 ng-hide="edit">Edit User:</h3>
 	
 	<form class="form-horizontal">
 	<div class="form-group">
@@ -139,11 +124,11 @@
 	</form>
 	
 	<hr>
-	<button class="btn btn-success" ng-disabled="error || incomplete">
+	<button class="btn btn-success" ng-disabled="error || incomplete" ng-click="save()">
 	<span class="glyphicon glyphicon-save"></span>  Save Changes
 	</button>
 
-	<script src= "myUsers.js"></script>
+	<script src= "myTasks.js"></script>
 
 	
 	
