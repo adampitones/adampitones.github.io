@@ -40,6 +40,23 @@
 	<a href="target.html" class="button">next</a>
 </footer>
 
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function check(form) {
+if (form.id.value=="username") { 
+if (form.pass.value=="password") {              
+location="target.html" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>
+
 
 
 
