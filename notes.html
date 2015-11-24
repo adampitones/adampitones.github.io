@@ -19,25 +19,20 @@
 
 
 
-<--- script----->
-    
-  <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="jquery.richtextarea.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.classyedit.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.classyedit.css" />
+<textarea class="classy-editor"></textarea>
 
-<link rel="stylesheet" type="text/css" href="jquery-ui-1.7.2.custom.css" /> 
-<link rel="stylesheet" type="text/css" href="richtextarea.css" /> 
-    
-<textarea name="test" id="edit1" cols="40" rows="5">
-Test 
-</textarea> 
-<script type="text/javascript">
-  $("#edit1").richtextarea(); 
+<script>
+
+$(document).ready(function() {
+
+    $(".classy-editor").ClassyEdit();
+
+});
+
 </script>
-
-
-
-
-
 
 
 
