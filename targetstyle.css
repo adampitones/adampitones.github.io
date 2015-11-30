@@ -1,59 +1,153 @@
- body {
- 	font-family: "Montserrat";  /* just a cutsom font */
- }
+@charset "utf-8";
+/* CSS Document */
 
- a:-webkit-any-link{		
-text-decoration:none !important;	/* do not underline links */
-color: black; !important;	        /* give links a default color */
- }
- 
- <span class="glyphicon glyphicon-chevron-left pull-left"></span>
-<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
 
-  .wrapper {
-  	margin: 10em;					/* just a temp margin */
-  	border: 0.1em solid #ccc;	/* wrap the calendar inside a box */
-  	width: 20em;				/* define a width for the box */
-  	height: 24em;				/* define a height for the box */
-  	box-shadow: 0.1em 0.2em 0.8em #ccc;	/* box shadow for better view */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
-  }
-
-  .header {
-  	height: 4em;					/* define a height for the header */
-  	background-color: #3f51b5;		/* give the header a background color */
-  	color: white;					/* give the header a text color */
-  	text-align: center;				/* center the text inside the header */
-  }
-
-.calendar-body .col-xs-1 {
-  	width: 2.5em;					/* give each column a fixed width */
-  	margin-left: 0.2em;				/* have some space between columnd */
-  	text-align: center;				/* align text in the center */
-  }
-  
- .header p {
-	padding-top: 1.2em;				/* vertical centering */
-	text-transform: uppercase;		/* all caps text  */
-  }
-
-.header span {
-  	padding: 1.3em;			/* vertical and horizontal centering icons */
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }
 
-.inactive {					/* inactive dates get a light gray text color */
-	color: #ccc;
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f9f9f9;
+	color: #0e171c;
+	font: 300 100%/1.5em 'Lato', sans-serif;
+	margin: 0;
 }
 
-.weekdays {	
-	padding: 1em;			/* giving weekdays some space around */
+a {
+	text-decoration: none;
 }
 
-.dates {
-	padding: 0.2em 1em 0.2em 1em;	/* giving dates some space  */
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
 }
 
-.line {								/* a gray line separator  */
-	height: 0.1em;
-	border: 0.1em solid #EEEEEE;
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	height: 538px;
+	left: 50%;
+	margin: -255px 0 0 -245px;
+	position: absolute;
+	top: 50%;
+	width: 510px;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
 }
