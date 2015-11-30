@@ -1,164 +1,59 @@
-@import '../../shared/mixins',
-        '../../shared/reset',
-        '../../shared/about-dark';
+ body {
+ 	font-family: "Montserrat";  /* just a cutsom font */
+ }
 
-/*
- * Copyright (c) 2012-2013 Thibaut Courouble
- * http://www.cssflow.com
- *
- * Licensed under the MIT License:
- * http://www.opensource.org/licenses/mit-license.php
- */
+ a:-webkit-any-link{		
+text-decoration:none !important;	/* do not underline links */
+color: black; !important;	        /* give links a default color */
+ }
+ 
+ <span class="glyphicon glyphicon-chevron-left pull-left"></span>
+<span class="glyphicon glyphicon-chevron-right pull-right"></span>
 
-html, body { min-height: 100%; }
+  .wrapper {
+  	margin: 10em;					/* just a temp margin */
+  	border: 0.1em solid #ccc;	/* wrap the calendar inside a box */
+  	width: 20em;				/* define a width for the box */
+  	height: 24em;				/* define a height for the box */
+  	box-shadow: 0.1em 0.2em 0.8em #ccc;	/* box shadow for better view */
 
-body {
-  font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
-  color: #404040;
-  background: #dbdede;
-  @include radial-gradient(center, circle cover, #dbdede, #bfbdbe);
-}
-
-.container {
-  margin: 80px auto;
-  width: 640px;
-  text-align: center;
-}
-
-.cal {
-  position: relative;
-  padding: 4px;
-  font-weight: bold;
-  background: #bebfc0;
-  background: rgba(black, .1);
-  border-radius: 5px;
-  @include inline-block;
-  @include box-shadow(inset 0 1px 1px rgba(black, .2),
-                      0 1px rgba(white, .4));
-
-  &:before {
-    content: '';
-    position: absolute;
-    bottom: 3px;
-    left: 4px;
-    right: 4px;
-    height: 6px;
-    background: #d9d9d9;
-    border: 1px solid #909090;
-    border-radius: 4px;
-    @include box-shadow(0 1px 2px rgba(black, .2));
   }
 
-  a { text-decoration: none; }
-
-  tr:first-child td { border-top: 0; }
-  td:first-child { border-left: 0; }
-
-  tr:first-child a { border-top: 0; margin-top: 0; }
-  tr:last-child a { border-bottom: 0; margin-bottom: 0; }
-
-  td:first-child a { border-left: 0; margin-left: 0; }
-  td:last-child a { border-right: 0; margin-right: 0; }
-
-  tr:last-child td:first-child a { border-radius: 0 0 0 3px; }
-  tr:last-child td:last-child a { border-radius: 0 0 3px 0; }
-}
-
-.cal-table {
-  position: relative;
-  margin: 0 0 1px;
-  border-collapse: separate;
-  border-left: 1px solid #979797;
-  border-right: 1px solid #979797;
-  border-bottom: 1px solid #bbb;
-  border-radius: 0 0 3px 3px;
-  @include box-shadow(1px 0 rgba(black, .1),
-                      -1px 0 rgba(black, .1));
-}
-
-.cal-caption {
-  width: 100%;
-  padding-bottom: 1px;
-  line-height: 32px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 -1px rgba(black, .3);
-  background: #629c2e;
-  border-radius: 3px 3px 0 0;
-  @include linear-gradient(top, #89c84d, #629c2e 75%, #548d20);
-  @include box-shadow(inset 0 0 0 1px rgba(black, .2),
-                      inset 0 1px rgba(black, .1),
-                      inset 0 2px rgba(white, .25),
-                      0 1px 3px rgba(black, .4));
-
-  a {
-    line-height: 30px;
-    padding: 0 10px;
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
+  .header {
+  	height: 4em;					/* define a height for the header */
+  	background-color: #3f51b5;		/* give the header a background color */
+  	color: white;					/* give the header a text color */
+  	text-align: center;				/* center the text inside the header */
   }
 
-  .prev { float: left; }
-  .next { float: right; }
-}
-
-.cal-body {
-  td {
-    width: 30px;
-    font-size: 11px;
-    border-top: 1px solid #eaeaea;
-    border-left: 1px solid #eaeaea;
+.calendar-body .col-xs-1 {
+  	width: 2.5em;					/* give each column a fixed width */
+  	margin-left: 0.2em;				/* have some space between columnd */
+  	text-align: center;				/* align text in the center */
+  }
+  
+ .header p {
+	padding-top: 1.2em;				/* vertical centering */
+	text-transform: uppercase;		/* all caps text  */
   }
 
-  a {
-    display: block;
-    position: relative;
-    line-height: 28px;
-    color: #555;
-    text-align: center;
-    background: white;
-  }
-
-  a:hover { background: #fafafa; }
+.header span {
+  	padding: 1.3em;			/* vertical and horizontal centering icons */
 }
 
-.cal-off a {
-  color: #ccc;
-  font-weight: normal;
+.inactive {					/* inactive dates get a light gray text color */
+	color: #ccc;
 }
 
-.cal-today a {
-  color: black;
-  background: #f5f5f5;
-  @include linear-gradient(top, #f5f5f5, white 70%);
+.weekdays {	
+	padding: 1em;			/* giving weekdays some space around */
 }
 
-.cal-selected a, .cal-body a:active {
-  margin: -1px;
-  color: #b2494d;
-  background: #fff5f6;
-  border: 1px solid #e7d4d4;
+.dates {
+	padding: 0.2em 1em 0.2em 1em;	/* giving dates some space  */
 }
 
-.cal-check a {
-  color: #f79901;
-  overflow: hidden;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: 12px;
-    height: 12px;
-    background: #ffb83b;
-    @include linear-gradient(top, #ffb83b, #ff6c00);
-    @include transform(rotate(-45deg));
-  }
-}
-
-.lt-ie8 {
-  .cal-table { *border-collapse: collapse; }
-  .cal-body a { zoom: 1; }
+.line {								/* a gray line separator  */
+	height: 0.1em;
+	border: 0.1em solid #EEEEEE;
 }
