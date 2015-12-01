@@ -16,7 +16,7 @@
 body {
 	background: url("notebook.jpg") no-repeat center center fixed;
 	background-size: 100%;
-	color: gray;
+	color: black;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
 }
@@ -44,7 +44,7 @@ table {
 
 .tabs{
 	position: absolute;
-	padding-left: 300px;
+	padding-left: 290px;
 	padding-top: 175px;
 }
 
