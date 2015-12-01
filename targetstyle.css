@@ -50,6 +50,17 @@ table {
 
 .tabs li{
 	padding-top: 32px;
+	
+	.image{
+		position: relative;
+	}
+	
+	h2{
+		position: absolute;
+		top: 200px;
+		left: 0;
+		width: 100%;
+	}
 }
 
 .container {
