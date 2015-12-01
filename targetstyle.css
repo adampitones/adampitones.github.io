@@ -43,9 +43,9 @@ table {
 }
 
 .tabs{
-	position: static;
-	padding-left: 260px;
-	padding-top: 175px;
+	position: relative;
+	margin-left: 260px;
+	margin-top: 175px;
 }
 
 .tabs li{
