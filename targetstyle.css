@@ -44,12 +44,12 @@ table {
 
 .tabs{
 	position: absolute;
-	padding-left: 200px;
-	padding-top: 190px;
+	padding-left: 300px;
+	padding-top: 180px;
 }
 
 .tabs li{
-	padding-top: 20px;
+	padding-top: 25px;
 }
 
 .container {
