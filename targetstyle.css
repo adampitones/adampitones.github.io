@@ -15,8 +15,7 @@
 
 body {
 	background-image: url("notebook.jpg") no-repeat center center fixed;
-	background: black;
-	color: #0e171c;
+	color: gray;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
 }
