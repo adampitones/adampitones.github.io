@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+     <script type="text/javascript" src="notes.js"></script>
+</head>
+    <body>
+        <div id="header">
+             <h1>Lecture Notes</h1>
+        </div>
+
+        <div id="nav">
+                CSCE 436<br>
+                CSCE 444<br>
+                Finc 409<br>
+                CSCE 464<br>
+        </div>
+
+        <div id="section">
+            <h1>Notebook</h1>
+            <p>
+            	
+            	
+            	CKEDITOR.config.toolbar = [
+   ['Styles','Format','Font','FontSize'],
+   '/',
+   ['Bold','Italic','Underline','StrikeThrough','-','Undo','Redo','-','Cut','Copy','Paste','Find','Replace','-','Outdent','Indent','-','Print'],
+   '/',
+   ['NumberedList','BulletedList','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+   ['Image','Table','-','Link','Flash','Smiley','TextColor','BGColor','Source']
+] ;
+            	
+                  
+<!--
+<script type="text/javascript">
+        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() }); // convert all text areas to rich text editor on that page
+ 
+        bkLib.onDomLoaded(function() {
+             new nicEditor().panelInstance('area1');
+        }); // convert text area with id area1 to rich text editor.
+ 
+        bkLib.onDomLoaded(function() {
+             new nicEditor({fullPanel : true}).panelInstance('area2');
+        }); // convert text area with id area2 to rich text editor with full panel.
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.classyedit.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.classyedit.css" />
+<textarea class="classy-editor"></textarea>
+
+<script>
+
+$(document).ready(function() {
+
+    $(".classy-editor").ClassyEdit();
+
+}); -->
+
+<script type="text/javascript">
+CKEDITOR.editorConfig = function( config ) {
+    config.skin = 'bootstrapck';
+    // Define changes to default configuration here. For example:
+    // config.language = 'fr';
+    // config.uiColor = '#AADC6E';
+    config.toolbar_Full =
+        [
+            { name: 'document', items : [ 'Source','-','Save','NewPage','DocProps','Preview','Print','-','Templates' ] },
+            { name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
+            { name: 'editing', items : [ 'Find','Replace','-','SelectAll','-','SpellChecker', 'Scayt' ] },
+            { name: 'forms', items : [ 'Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
+                'HiddenField' ] },
+            '/',
+            { name: 'basicstyles', items : [ 'Bold','Italic','Underline','Strike','Subscript','Superscript','-','RemoveFormat' ] },
+            { name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Outdent','Indent','-','Blockquote','CreateDiv',
+                '-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','-','BidiLtr','BidiRtl' ] },
+            { name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+            { name: 'insert', items : [ 'Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak','Iframe' ] },
+            '/',
+            { name: 'styles', items : [ 'Styles','Format','Font','FontSize' ] },
+            { name: 'colors', items : [ 'TextColor','BGColor' ] },
+            { name: 'tools', items : [ 'Maximize', 'ShowBlocks','-','About' ] }
+        ];
+
+    config.toolbar_Basic =
+        [
+            ['Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink','-','About']
+        ];
+};
+
+ <textarea id="ckeditor"></textarea>
+            <script type="text/javascript">
+                CKEDITOR.replace( 'ckeditor',
+                        {
+                            toolbar : 'Basic', /* this does the magic */
+                            uiColor : '#9AB8F3'
+                        });
+ </script>
+
+</p>
+</div>
+
+<div id="footer">
+classsssss
+</div>
+</body>
+</html> 
+
+
+
+
+
+
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px; 
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px; 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+</style>
+
+
+
