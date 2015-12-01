@@ -16,6 +16,7 @@
 body {
 	background-image: url("notebook.jpg");
 	background-repeat: no-repeat;
+	background-size: 100%;
 	color: #0e171c;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
