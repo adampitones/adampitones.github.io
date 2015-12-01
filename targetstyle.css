@@ -14,7 +14,8 @@
 /* ---------- GENERAL ---------- */
 
 body {
-	background-image: url("notebook.jpg") no-repeat center center fixed;
+	background: url("notebook.jpg") no-repeat center center fixed;
+	background-size: 100%;
 	color: gray;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
