@@ -14,8 +14,11 @@
 /* ---------- GENERAL ---------- */
 
 body {
-	background-image: url("notebook.jpg") no-repeat center center fixed;
-	background-size: 100%;
+	background: url("notebook.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: #0e171c;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
