@@ -42,6 +42,11 @@ table {
 	border-spacing: 0;
 }
 
+.tabs{
+	left: 20%
+	top: 60%
+	position: absolute;
+}
 .container {
 	height: 538px;
 	left: 70%;
