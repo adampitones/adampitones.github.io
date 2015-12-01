@@ -44,9 +44,14 @@ table {
 
 .tabs{
 	position: absolute;
-	padding-left: 60px;
-	padding-top: 100px;
+	padding-left: 100px;
+	padding-top: 200px;
 }
+
+.tabs li{
+	padding-top: 15px;
+}
+
 .container {
 	height: 538px;
 	left: 70%;
