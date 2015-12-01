@@ -43,9 +43,8 @@ table {
 }
 
 .tabs{
-	left: 20%
-	top: 60%
 	position: absolute;
+	padding-left: 16px;
 }
 .container {
 	height: 538px;
