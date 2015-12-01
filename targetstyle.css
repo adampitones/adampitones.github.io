@@ -14,11 +14,8 @@
 /* ---------- GENERAL ---------- */
 
 body {
-	background: url("notebook.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background-image: url("notebook.jpg") class="stretch";
+	background-repeat: no-repeat;
 	color: #0e171c;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
