@@ -50,14 +50,6 @@ classsssss
 -->
 
 
-
-
-
-
-
-
-
-
 <HTML>
 
 <TITLE>Simple Notepad</TITLE>
@@ -72,31 +64,37 @@ document.getElementById("output").value = "Text....";
 
 }
 
-function clearTextArea() {
-
-document.getElementById("output").value = "";
-
-}
-
 function bold_click(){
 
-document.getElementById("output").style.font.weight = "Bold";
+document.getElementById("output").style.fontWeight = "bold";
 
 }
 
 function underline_click(){
 
-document.getElementById("output").style.font.decoration = "Underline";
-
-}
-
-function italic_click(){
-
-document.getElementById("output").style.font.style = "Italic";
+document.getElementById("output").style.textDecoration = "Underline";
 
 }
 
  
+
+function italic_click(){
+
+document.getElementById("output").style.fontStyle = "Italic";
+
+}
+
+ 
+
+function normal_click(){
+
+document.getElementById("output").style.fontStyle = "Normal";
+
+document.getElementById("output").style.textDecoration = "None";
+
+document.getElementById("output").style.fontWeight = "Normal";
+
+}
 
 </SCRIPT>
 
@@ -104,6 +102,7 @@ document.getElementById("output").style.font.style = "Italic";
 
 <BODY onload="load_text()">
 
+ 
 
 <FORM NAME="controls" ID="controls">
 
@@ -115,22 +114,37 @@ document.getElementById("output").style.font.style = "Italic";
 
 </SELECT>
 
-
 <INPUT id="button1" type="button" value="B" name="button1" style="FONT-WEIGHT: bold; WIDTH: 26px; HEIGHT: 24px" size="28" onclick="bold_click()">
 
 <INPUT type="button" value="I" style="WIDTH: 25px; FONT-STYLE: italic; HEIGHT: 24px" size="30" onclick="italic_click()">
 
 <INPUT id="button1" style="WIDTH: 26px; HEIGHT: 24px; TEXT-DECORATION: underline" type="button" size="8" value="U" name="button1" onclick="underline_click()">
 
-<BR/><TEXTAREA style="WIDTH: 399px; HEIGHT: 182px" name="output" rows="9" wrap="virtual" cols=48></TEXTAREA><BR>
+ 
 
-<P align="center"><INPUT TYPE="button" VALUE="Clear" onclick="clearTextArea()"></P>
+<INPUT id="button1" style="WIDTH: 26px; HEIGHT: 24px;" type="button" size="8" value="N" name="button1" onclick="normal_click()">
+
+ 
+
+<BR/><TEXTAREA style="WIDTH: 399px; HEIGHT: 182px" id="output" name="output" rows="9" wrap="virtual" cols=48></TEXTAREA><BR>
+
+<P align="center"><INPUT TYPE="reset" VALUE="Clear"></P>
 
 </FORM>
+
 
 </BODY>
 
 </HTML>
+
+
+
+
+
+
+
+
+
 
 
 
