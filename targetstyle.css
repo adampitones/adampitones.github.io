@@ -116,21 +116,6 @@ table {
 .event {
 	cursor: pointer;
 	position: relative;
-
-	.onclick-menu{
-		position: relative;
-		display: inline-block;
-	}
-	
-	.onclick-menu:focus .onclick-menu-content{
-		display: block;
-	}
-	
-	.onclick-menu-content{
-		position: absolute;
-		z-index: 1;
-		display: none;
-	}
 }
 
 .event:after {
