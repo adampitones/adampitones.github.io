@@ -45,11 +45,11 @@ table {
 .tabs{
 	position: absolute;
 	padding-left: 300px;
-	padding-top: 180px;
+	padding-top: 175px;
 }
 
 .tabs li{
-	padding-top: 30px;
+	padding-top: 32px;
 }
 
 .container {
