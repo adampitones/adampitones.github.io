@@ -43,7 +43,7 @@ table {
 }
 
 .tabs{
-	position: relative;
+	position: static;
 	padding-left: 260px;
 	padding-top: 175px;
 }
