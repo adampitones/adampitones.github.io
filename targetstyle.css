@@ -43,7 +43,7 @@ table {
 }
 
 .tabs{
-	position: absolute;
+	background-attachment: fixed;
 	margin-left: 250px;
 	margin-top: 175px;
 }
