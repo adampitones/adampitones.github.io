@@ -14,7 +14,7 @@
 /* ---------- GENERAL ---------- */
 
 body {
-	background-image: url("notebook.jpg");
+	background-image: url("notebook.jpg") class="stretch";
 	background-repeat: no-repeat;
 	background-size: 100%;
 	color: #0e171c;
