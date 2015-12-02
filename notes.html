@@ -5,12 +5,15 @@
 	 <link href="http://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
 	 <link rel="stylesheet" type="text/css" href="mystyle.css" >
 </head>
-    <body>
-        <div id="header">
+
+ <div id="container">
+    
+    	
+      <div id="header">
              <h1>Class Notes</h1>
         </div>
 
-        <div id="section">
+        <div id="body">
                 <a href="link.html">
                    <img src="http://filetrick.com/img/programming.png" width="100" height="100"/>
               
@@ -62,11 +65,11 @@
 	</div>
         -->
        
-	<footer>
+	<div id="footer">
 		<a href="link.html">
 		<img src="http://www.clker.com/cliparts/2/v/Z/A/g/2/back-button-hi.png" width="200" height="175">
 		</a>
-	</footer>
+	</div>
   
 </body>
 </html>
@@ -76,7 +79,7 @@
 <!------------CSS---------------------------------CSS-----------------------------------CSS---------------------------------------->
 
 <style>
-     body {
+  html   body {
 	background: url("notebook.jpg") no-repeat center center fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -84,6 +87,11 @@
 	color: #1C1C1C;
 	font: 300 100%/1.5em 'Lato', sans-serif;
 	margin: 0;
+}
+
+container{
+	min-height: 100%;
+	position: relative;
 }
 
 h1{
@@ -98,10 +106,10 @@ h1{
 
 
 #footer{
+   	position:absolute;
+   	bottom: 0;
    	width: 100%;
-	height: 100px;
-    	position: fixed;
-    	bottom: 0px;
+   	height: 60px;
     	<img src="http://www.clker.com/cliparts/2/v/Z/A/g/2/back-button-hi.png" width="200" height="175">
 	
 }
