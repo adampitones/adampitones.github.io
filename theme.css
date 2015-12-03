@@ -38,3 +38,9 @@ body {
 	border-width:2px;
 	border-color:red; */
 }
+
+#header_pill a:hover{
+	background-color: transparent;	
+}
+
+

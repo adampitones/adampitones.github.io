@@ -2,9 +2,9 @@ angular.module('myApp', []).controller('userCtrl', function($scope) {
 $scope.taskName = '';
 $scope.dueDate = '';
 $scope.tasks = [
-{id:1, taskName:'Review Paper', dueDate:"Dec.1" },
-{id:2, taskName:'Mock Up',  dueDate:"Dec.7" },
-{id:3, taskName:'Rough Draft',dueDate:"Dec.15" }
+{id:1, taskName:'Review Paper', dueDate:"Oct.1" },
+{id:2, taskName:'Mock Up',  dueDate:"Nov.7" },
+{id:3, taskName:'Rough Draft',dueDate:"Dec.1" }
 ];
 $scope.edit = true;
 $scope.error = false;
