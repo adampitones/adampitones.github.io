@@ -47,12 +47,12 @@ table {
 
 .links{
 	position: absolute;
-	left: 17%;
-	top: 23%;
+	left: 16%;
+	top: 20%;
 }
 
 .links li{
-	padding-top: 35px;
+	padding-top: 40px;
 }
 
 .tabs{
