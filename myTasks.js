@@ -6,6 +6,17 @@ $scope.tasks = [
 {id:2, taskName:'Mock Up',  dueDate:"Nov.7" },
 {id:3, taskName:'Rough Draft',dueDate:"Dec.1" }
 ];
+$scope.tasks2 = [
+{id:1, taskName:'Review Paper', dueDate:"Oct.12" },
+{id:2, taskName:'Assignment',  dueDate:"Nov.17" },
+{id:3, taskName:'Assigment',dueDate:"Dec.11" }
+];
+$scope.tasks3 = [
+{id:1, taskName:'Review Paper', dueDate:"Oct.30" },
+{id:2, taskName:'Final Report',  dueDate:"Nov.25" },
+{id:3, taskName:'Assigment',dueDate:"Dec.15" }
+];
+
 $scope.edit = true;
 $scope.error = false;
 $scope.incomplete = false; 

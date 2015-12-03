@@ -1,5 +1,3 @@
-<?php ini_set('display_errors', '1'); ?>
-
 <?php 
 
 define('DB_HOST', 'database-new.cse.tamu.edu'); 
@@ -17,7 +15,7 @@ session_start(); //starting the session for user profile page
 
 
 
-	if(!empty($_POST['user'])) //checking the 'user' name which is from Sign-In.html, is it empty or have some text 
+	if(!empty($_POST['user'])) //checking the 'user' name which is from index.html, is it empty or have some text 
 	{ 
 	 
 		$query = mysql_query("SELECT * FROM UserName where userName = '$_POST[user]' AND pass = '$_POST[pass]'") or die(mysql_error()); 
@@ -28,12 +26,17 @@ session_start(); //starting the session for user profile page
 		if(!empty($row['userName']) AND !empty($row['pass'])) 
 		{ 
 			$_SESSION['logged_in'] = true;
-			$_SESSION['userName'] = $row['pass']; 
-			echo "SUCCESSFULLY LOGIN TO USER PROFILE PAGE..."; 
+			$_SESSION['userName'] = $row['userName'];
+			//$_SESSION['userName'] = $row['pass'];
+
+			header("Location: course_page.php"); /* Redirect browser */
+			//echo "SUCCESSFULLY LOGIN TO USER PROFILE PAGE..."; 
 		} 
 		else 
 		{ 	
-			echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY..."; 
+			$_SESSION['logged_in'] = false;	
+			header ("refresh:1;url=index.html" ); /* Redirect browser */
+			echo "SORRY... YOU ENTERD WRONG ID AND PASSWORD... PLEASE RETRY...";			
 		} 
 
 	}  
