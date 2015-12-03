@@ -23,7 +23,9 @@ body {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
+	color: white;
+	font-weight: bold;
 }
 
 h2 {
@@ -49,9 +51,6 @@ table {
 	top: 20%;
 }
 
-	.links a{
-		color: white;
-	}
 .tabs{
 	position: absolute;
 	left: 10%;
