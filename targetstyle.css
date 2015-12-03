@@ -47,8 +47,11 @@ table {
 	position: absolute;
 	left: 15%;
 	top: 20%;
-	color: white;
 }
+
+	.links a{
+		color: white;
+	}
 .tabs{
 	position: absolute;
 	left: 10%;
