@@ -49,7 +49,10 @@ table {
 	position: absolute;
 	left: 17%;
 	top: 23%;
-	padding-top: 32px;
+}
+
+.links li{
+	padding-top: 35px;
 }
 
 .tabs{
