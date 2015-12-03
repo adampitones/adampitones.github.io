@@ -43,6 +43,11 @@ table {
 	border-spacing: 0;
 }
 
+.links{
+	position: absolute;
+	left: 10%;
+	top: 17%;
+}
 .tabs{
 	position: absolute;
 	left: 10%;
